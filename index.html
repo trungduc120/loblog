@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Lọ</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">L</div>
+        <div>
+          <h1>Blog Lọ</h1>
+          <p class="lead">Nơi chia sẻ vibe chill và cảm hứng sống 😎</p>
+        </div>
+      </div>
+
+      <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('about')">About</button>
+        <button onclick="showPage('contact')">Contact</button>
+        <button id="themeBtn" onclick="toggleTheme()">🌗 Theme</button>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section id="home" class="page active">
+        <h2>Bài viết mới</h2>
+        <p>Chưa có bài nào, thêm thủ công bằng HTML hoặc phần quản lý sắp tới.</p>
+
+        <div class="comments">
+          <h3>Bình luận</h3>
+          <div id="commentList"></div>
+          <textarea id="commentInput" placeholder="Viết bình luận..."></textarea>
+          <button onclick="addComment()">Gửi</button>
+        </div>
+      </section>
+
+      <section id="about" class="page">
+        <h2>Về Blog Lọ</h2>
+        <p>Blog được tạo để chia sẻ góc nhìn, cảm xúc và những câu chuyện đời thường của Lọ.</p>
+      </section>
+
+      <section id="contact" class="page">
+        <h2>Liên hệ</h2>
+        <p>Liên hệ qua email: <a href="mailto:lo@example.com">lo@example.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Blog Lọ — made with ❤️</p>
+    </footer>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
+  
